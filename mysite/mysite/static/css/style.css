@@ -1,0 +1,12 @@
+body {
+    background: rgb(125,181,212);
+    background: radial-gradient(circle, rgba(125,181,212,1) 0%, rgba(166,233,143,0.6615021008403361) 100%);
+}
+
+
+.errorlist{
+    color: red;
+}
+
+
+

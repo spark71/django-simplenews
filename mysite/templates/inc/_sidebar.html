@@ -1,0 +1,19 @@
+<!--Подключаем созданный тег news_tags-->
+
+{% load news_tags %}
+
+
+{%comment%}
+<div class="list-group">
+<!-- С этого момента можем убрать получение categories из views   -->
+    {% get_list_categories as categories %}
+    {% for item in categories %}
+    <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">{{ item.title }}</a>
+    {% endfor %}
+</div>
+
+{% endcomment %}
+<!--Inclusion tag-->
+{% show_categories %}
+
+
